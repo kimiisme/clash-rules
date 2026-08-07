@@ -1,0 +1,17 @@
+﻿# Quantumult X — ibkr → TRADING
+HOST-SUFFIX,ibkr.com,TRADING
+HOST-SUFFIX,ibllc.com,TRADING
+HOST-SUFFIX,ibkr.com.hk,TRADING
+HOST-SUFFIX,ibkr.com.au,TRADING
+HOST-SUFFIX,ibcdn.com,TRADING
+HOST-SUFFIX,iblink.com,TRADING
+HOST-SUFFIX,interactivebrokers.com,TRADING
+HOST-SUFFIX,interactivebrokers.com.hk,TRADING
+HOST-SUFFIX,interactivebrokers.ca,TRADING
+HOST-SUFFIX,interactivebrokers.ie,TRADING
+HOST-SUFFIX,interactivebrokers.co.uk,TRADING
+HOST-SUFFIX,interactivebrokers.co.in,TRADING
+HOST-SUFFIX,interactivebrokers.com.sg,TRADING
+HOST-SUFFIX,interactivebrokers.com.au,TRADING
+HOST-SUFFIX,ndcdyn.interactivebrokers.com,TRADING
+HOST-SUFFIX,cdcdyn.interactivebrokers.com,TRADING

@@ -1,0 +1,5 @@
+﻿# Quantumult X — tos → TRADING
+HOST-SUFFIX,thinkorswim.com,TRADING
+HOST-SUFFIX,tdameritrade.com,TRADING
+HOST-SUFFIX,schwab.com,TRADING
+HOST,tosmediaserver.schwab.com,TRADING
