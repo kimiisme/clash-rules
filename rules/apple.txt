@@ -1,0 +1,17 @@
+# Apple 服务
+# 行为建议: DIRECT (国内可用) 或 PROXY (按需)
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,apple.com.cn
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,apple-cloudkit.com
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,appstore.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-KEYWORD,apple.com
+DOMAIN-KEYWORD,icloud

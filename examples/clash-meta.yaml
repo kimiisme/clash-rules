@@ -1,0 +1,151 @@
+# Clash Meta / Mihomo 示例片段
+# 把下面内容合并进你的配置，或参考订阅 URL 自行填写
+
+# ---------- DNS（可选，按需） ----------
+# dns:
+#   enable: true
+#   enhanced-mode: fake-ip
+#   nameserver:
+#     - 223.5.5.5
+#     - 119.29.29.29
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      # - 你的机场节点...
+
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      # - 你的机场节点...
+
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - 🚀 节点选择
+
+  - name: 🤖 AI
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+
+  - name: 🔍 Google
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+
+# 订阅地址（推送后替换为你的 raw URL）
+# 格式: https://raw.githubusercontent.com/<用户名>/<仓库>/main/rules/<文件>.txt
+rule-providers:
+  private:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/private.txt"
+    path: ./ruleset/private.txt
+    interval: 86400
+
+  reject:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.txt"
+    path: ./ruleset/reject.txt
+    interval: 86400
+
+  ai:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ai.txt"
+    path: ./ruleset/ai.txt
+    interval: 86400
+
+  telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/telegram.txt"
+    path: ./ruleset/telegram.txt
+    interval: 86400
+
+  apple:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/apple.txt"
+    path: ./ruleset/apple.txt
+    interval: 86400
+
+  google:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/google.txt"
+    path: ./ruleset/google.txt
+    interval: 86400
+
+  gfw:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/gfw.txt"
+    path: ./ruleset/gfw.txt
+    interval: 86400
+
+  direct:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/direct.txt"
+    path: ./ruleset/direct.txt
+    interval: 86400
+
+  proxy:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/proxy.txt"
+    path: ./ruleset/proxy.txt
+    interval: 86400
+
+rules:
+  - RULE-SET,private,🎯 全球直连
+  - RULE-SET,reject,🛑 广告拦截
+  - RULE-SET,ai,🤖 AI
+  - RULE-SET,telegram,📲 Telegram
+  - RULE-SET,apple,🍎 Apple
+  - RULE-SET,google,🔍 Google
+  - RULE-SET,gfw,🚀 节点选择
+  - RULE-SET,direct,🎯 全球直连
+  - RULE-SET,proxy,🚀 节点选择
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🚀 节点选择
