@@ -62,6 +62,13 @@ proxy-groups:
       - 🚀 节点选择
       - DIRECT
 
+  - name: TRADING
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+      # - 建议选低延迟、稳定的节点（美股交易）
+
 # 订阅地址（推送后替换为你的 raw URL）
 # 格式: https://raw.githubusercontent.com/<用户名>/<仓库>/main/rules/<文件>.txt
 rule-providers:
@@ -79,6 +86,30 @@ rule-providers:
     format: text
     url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.txt"
     path: ./ruleset/reject.txt
+    interval: 86400
+
+  ibkr-direct:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr-direct.txt"
+    path: ./ruleset/ibkr-direct.txt
+    interval: 86400
+
+  ibkr:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr.txt"
+    path: ./ruleset/ibkr.txt
+    interval: 86400
+
+  tos:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tos.txt"
+    path: ./ruleset/tos.txt
     interval: 86400
 
   ai:
@@ -140,6 +171,9 @@ rule-providers:
 rules:
   - RULE-SET,private,🎯 全球直连
   - RULE-SET,reject,🛑 广告拦截
+  - RULE-SET,ibkr-direct,🎯 全球直连
+  - RULE-SET,ibkr,TRADING
+  - RULE-SET,tos,TRADING
   - RULE-SET,ai,🤖 AI
   - RULE-SET,telegram,📲 Telegram
   - RULE-SET,apple,🍎 Apple

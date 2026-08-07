@@ -1,0 +1,4 @@
+# Interactive Brokers 中国站 — 直连
+# 行为建议: DIRECT
+DOMAIN-SUFFIX,ibkr.com.cn
+DOMAIN-SUFFIX,ibllc.com.cn

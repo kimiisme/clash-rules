@@ -8,6 +8,9 @@
 |------|------|----------|
 | [rules/private.txt](rules/private.txt) | 局域网 / 私有 IP | DIRECT |
 | [rules/reject.txt](rules/reject.txt) | 广告与追踪 | REJECT |
+| [rules/ibkr-direct.txt](rules/ibkr-direct.txt) | 盈透中国站 | DIRECT |
+| [rules/ibkr.txt](rules/ibkr.txt) | 盈透证券海外 | TRADING |
+| [rules/tos.txt](rules/tos.txt) | Thinkorswim / Schwab | TRADING |
 | [rules/ai.txt](rules/ai.txt) | ChatGPT / Claude / Gemini 等 | PROXY |
 | [rules/telegram.txt](rules/telegram.txt) | Telegram | PROXY |
 | [rules/apple.txt](rules/apple.txt) | Apple / iCloud | DIRECT 或 PROXY |
@@ -23,6 +26,9 @@
 ```text
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/private.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr-direct.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tos.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ai.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/telegram.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/apple.txt

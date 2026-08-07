@@ -1,0 +1,6 @@
+# Thinkorswim / TD Ameritrade / Schwab — 交易专用策略
+# 行为建议: TRADING
+DOMAIN-SUFFIX,thinkorswim.com
+DOMAIN-SUFFIX,tdameritrade.com
+DOMAIN-SUFFIX,schwab.com
+DOMAIN,tosmediaserver.schwab.com
