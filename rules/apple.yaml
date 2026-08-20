@@ -1,0 +1,23 @@
+# NAME: Apple
+# AUTHOR: kimiisme
+# REPO: https://github.com/kimiisme/clash-rules
+# UPDATED: 2026-08-20 18:22:00
+# DOMAIN-SUFFIX: 13
+# DOMAIN-KEYWORD: 2
+# TOTAL: 15
+payload:
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,apple.com.cn
+  - DOMAIN-SUFFIX,icloud.com
+  - DOMAIN-SUFFIX,icloud.com.cn
+  - DOMAIN-SUFFIX,cdn-apple.com
+  - DOMAIN-SUFFIX,apple-cloudkit.com
+  - DOMAIN-SUFFIX,apple-dns.net
+  - DOMAIN-SUFFIX,appstore.com
+  - DOMAIN-SUFFIX,itunes.com
+  - DOMAIN-SUFFIX,mzstatic.com
+  - DOMAIN-SUFFIX,me.com
+  - DOMAIN-SUFFIX,aaplimg.com
+  - DOMAIN-SUFFIX,apple-mapkit.com
+  - DOMAIN-KEYWORD,apple.com
+  - DOMAIN-KEYWORD,icloud

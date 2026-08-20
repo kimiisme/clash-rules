@@ -1,0 +1,12 @@
+# NAME: TOS
+# AUTHOR: kimiisme
+# REPO: https://github.com/kimiisme/clash-rules
+# UPDATED: 2026-08-20 18:22:00
+# DOMAIN-SUFFIX: 3
+# DOMAIN: 1
+# TOTAL: 4
+payload:
+  - DOMAIN-SUFFIX,thinkorswim.com
+  - DOMAIN-SUFFIX,tdameritrade.com
+  - DOMAIN-SUFFIX,schwab.com
+  - DOMAIN,tosmediaserver.schwab.com

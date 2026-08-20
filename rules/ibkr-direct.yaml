@@ -1,0 +1,9 @@
+# NAME: IBKR-Direct
+# AUTHOR: kimiisme
+# REPO: https://github.com/kimiisme/clash-rules
+# UPDATED: 2026-08-20 18:22:00
+# DOMAIN-SUFFIX: 2
+# TOTAL: 2
+payload:
+  - DOMAIN-SUFFIX,ibkr.com.cn
+  - DOMAIN-SUFFIX,ibllc.com.cn

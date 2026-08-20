@@ -1,0 +1,23 @@
+# NAME: IBKR
+# AUTHOR: kimiisme
+# REPO: https://github.com/kimiisme/clash-rules
+# UPDATED: 2026-08-20 18:22:00
+# DOMAIN-SUFFIX: 16
+# TOTAL: 16
+payload:
+  - DOMAIN-SUFFIX,ibkr.com
+  - DOMAIN-SUFFIX,ibllc.com
+  - DOMAIN-SUFFIX,ibkr.com.hk
+  - DOMAIN-SUFFIX,ibkr.com.au
+  - DOMAIN-SUFFIX,ibcdn.com
+  - DOMAIN-SUFFIX,iblink.com
+  - DOMAIN-SUFFIX,interactivebrokers.com
+  - DOMAIN-SUFFIX,interactivebrokers.com.hk
+  - DOMAIN-SUFFIX,interactivebrokers.ca
+  - DOMAIN-SUFFIX,interactivebrokers.ie
+  - DOMAIN-SUFFIX,interactivebrokers.co.uk
+  - DOMAIN-SUFFIX,interactivebrokers.co.in
+  - DOMAIN-SUFFIX,interactivebrokers.com.sg
+  - DOMAIN-SUFFIX,interactivebrokers.com.au
+  - DOMAIN-SUFFIX,ndcdyn.interactivebrokers.com
+  - DOMAIN-SUFFIX,cdcdyn.interactivebrokers.com

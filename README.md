@@ -8,52 +8,51 @@
 
 | 规则 | 用途 | 建议策略 | Clash | QuanX |
 |------|------|----------|-------|-------|
-| private | 局域网 / 私有 IP | DIRECT | [rules/](rules/private.txt) | [quanx/](quanx/private.list) |
-| reject | 广告与追踪 | REJECT | [rules/](rules/reject.txt) | [quanx/](quanx/reject.list) |
-| ibkr-direct | 盈透中国站 | DIRECT | [rules/](rules/ibkr-direct.txt) | [quanx/](quanx/ibkr-direct.list) |
-| ibkr | 盈透证券海外 | TRADING | [rules/](rules/ibkr.txt) | [quanx/](quanx/ibkr.list) |
-| tos | Thinkorswim / Schwab | TRADING | [rules/](rules/tos.txt) | [quanx/](quanx/tos.list) |
+| private | 局域网 / 私有 IP | DIRECT | [yaml](rules/private.yaml) / [txt](rules/private.txt) | [quanx/](quanx/private.list) |
+| reject | 广告与追踪 | REJECT | [yaml](rules/reject.yaml) / [txt](rules/reject.txt) | [quanx/](quanx/reject.list) |
+| ibkr-direct | 盈透中国站 | DIRECT | [yaml](rules/ibkr-direct.yaml) / [txt](rules/ibkr-direct.txt) | [quanx/](quanx/ibkr-direct.list) |
+| ibkr | 盈透证券海外 | TRADING | [yaml](rules/ibkr.yaml) / [txt](rules/ibkr.txt) | [quanx/](quanx/ibkr.list) |
+| tos | Thinkorswim / Schwab | TRADING | [yaml](rules/tos.yaml) / [txt](rules/tos.txt) | [quanx/](quanx/tos.list) |
 | tradingview | TradingView 图表 / 行情 | TRADING | [yaml](rules/tradingview.yaml) / [txt](rules/tradingview.txt) | [quanx/](quanx/tradingview.list) |
-| ai | ChatGPT / Claude 等 | PROXY | [rules/](rules/ai.txt) | [quanx/](quanx/ai.list) |
-| telegram | Telegram | PROXY | [rules/](rules/telegram.txt) | [quanx/](quanx/telegram.list) |
-| apple | Apple / iCloud | DIRECT | [rules/](rules/apple.txt) | [quanx/](quanx/apple.list) |
-| google | Google / YouTube | PROXY | [rules/](rules/google.txt) | [quanx/](quanx/google.list) |
-| gfw | 常见被墙站点 | PROXY | [rules/](rules/gfw.txt) | [quanx/](quanx/gfw.list) |
-| direct | 国内常用域名 | DIRECT | [rules/](rules/direct.txt) | [quanx/](quanx/direct.list) |
-| proxy | 常见海外服务 | PROXY | [rules/](rules/proxy.txt) | [quanx/](quanx/proxy.list) |
+| ai | ChatGPT / Claude 等 | PROXY | [yaml](rules/ai.yaml) / [txt](rules/ai.txt) | [quanx/](quanx/ai.list) |
+| telegram | Telegram | PROXY | [yaml](rules/telegram.yaml) / [txt](rules/telegram.txt) | [quanx/](quanx/telegram.list) |
+| apple | Apple / iCloud | DIRECT | [yaml](rules/apple.yaml) / [txt](rules/apple.txt) | [quanx/](quanx/apple.list) |
+| google | Google / YouTube | PROXY | [yaml](rules/google.yaml) / [txt](rules/google.txt) | [quanx/](quanx/google.list) |
+| gfw | 常见被墙站点 | PROXY | [yaml](rules/gfw.yaml) / [txt](rules/gfw.txt) | [quanx/](quanx/gfw.list) |
+| direct | 国内常用域名 | DIRECT | [yaml](rules/direct.yaml) / [txt](rules/direct.txt) | [quanx/](quanx/direct.list) |
+| proxy | 常见海外服务 | PROXY | [yaml](rules/proxy.yaml) / [txt](rules/proxy.txt) | [quanx/](quanx/proxy.list) |
 
 ## Clash Meta 订阅
 
-`rule-providers`：`type: http`，`behavior: classical`
+`rule-providers`：`type: http`，`behavior: classical`，`format: yaml`（blackmatrix7 风格 `payload`）
 
-- 多数规则：`format: text`
-- TradingView：`format: yaml`（blackmatrix7 风格 `payload`）
+同名 `.txt` 仍保留，可改用 `format: text`。
 
 ```text
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/private.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr-direct.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tos.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/private.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr-direct.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tos.yaml
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.yaml
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ai.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/telegram.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/apple.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/google.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/gfw.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/direct.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/proxy.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ai.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/telegram.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/apple.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/google.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/gfw.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/direct.yaml
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/proxy.yaml
 ```
 
-TradingView `rule-providers` 示例：
+`rule-providers` 示例：
 
 ```yaml
-tradingview:
+google:
   type: http
   behavior: classical
   format: yaml
-  url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.yaml"
-  path: ./ruleset/tradingview.yaml
+  url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/google.yaml"
+  path: ./ruleset/google.yaml
   interval: 86400
 ```
 
@@ -85,7 +84,7 @@ https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/proxy.list, ta
 
 ## 维护
 
-1. 优先改 `rules/*.txt` 或 `rules/*.yaml`（Clash 源），再同步生成 `quanx/*.list`。
+1. 优先改 `rules/*.txt`，再同步生成 `rules/*.yaml` 与 `quanx/*.list`。
 2. `git push` 后客户端按 `update-interval` / `interval` 自动更新。
 3. `reject` 关键词较宽，误杀时删掉对应行或加到 `direct`。
 
