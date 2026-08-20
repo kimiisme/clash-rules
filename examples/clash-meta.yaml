@@ -112,6 +112,14 @@ rule-providers:
     path: ./ruleset/tos.txt
     interval: 86400
 
+  tradingview:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.txt"
+    path: ./ruleset/tradingview.txt
+    interval: 86400
+
   ai:
     type: http
     behavior: classical
@@ -174,6 +182,7 @@ rules:
   - RULE-SET,ibkr-direct,🎯 全球直连
   - RULE-SET,ibkr,TRADING
   - RULE-SET,tos,TRADING
+  - RULE-SET,tradingview,TRADING
   - RULE-SET,ai,🤖 AI
   - RULE-SET,telegram,📲 Telegram
   - RULE-SET,apple,🍎 Apple

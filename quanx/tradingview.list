@@ -1,0 +1,8 @@
+# Quantumult X — tradingview → TRADING
+# 主域名（含子域名）
+HOST-SUFFIX,tradingview.com,TRADING
+HOST-SUFFIX,tradingview-widget.com,TRADING
+HOST-SUFFIX,tradeviewlabs.com,TRADING
+HOST-SUFFIX,tvwidgets.io,TRADING
+# 关键字兜底
+HOST-KEYWORD,tradingview,TRADING

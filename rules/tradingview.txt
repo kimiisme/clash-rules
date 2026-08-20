@@ -1,0 +1,9 @@
+# TradingView — 交易图表 / 实时行情
+# 行为建议: TRADING
+# 主域名（含子域名）
+DOMAIN-SUFFIX,tradingview.com
+DOMAIN-SUFFIX,tradingview-widget.com
+DOMAIN-SUFFIX,tradeviewlabs.com
+DOMAIN-SUFFIX,tvwidgets.io
+# 关键字兜底
+DOMAIN-KEYWORD,tradingview

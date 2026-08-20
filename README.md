@@ -13,6 +13,7 @@
 | ibkr-direct | 盈透中国站 | DIRECT | [rules/](rules/ibkr-direct.txt) | [quanx/](quanx/ibkr-direct.list) |
 | ibkr | 盈透证券海外 | TRADING | [rules/](rules/ibkr.txt) | [quanx/](quanx/ibkr.list) |
 | tos | Thinkorswim / Schwab | TRADING | [rules/](rules/tos.txt) | [quanx/](quanx/tos.list) |
+| tradingview | TradingView 图表 / 行情 | TRADING | [rules/](rules/tradingview.txt) | [quanx/](quanx/tradingview.list) |
 | ai | ChatGPT / Claude 等 | PROXY | [rules/](rules/ai.txt) | [quanx/](quanx/ai.list) |
 | telegram | Telegram | PROXY | [rules/](rules/telegram.txt) | [quanx/](quanx/telegram.list) |
 | apple | Apple / iCloud | DIRECT | [rules/](rules/apple.txt) | [quanx/](quanx/apple.list) |
@@ -31,6 +32,7 @@ https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr-direct.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tos.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ai.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/telegram.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/apple.txt
@@ -52,6 +54,7 @@ https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/reject.list, t
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/ibkr-direct.list, tag=IBKR-CN, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/ibkr.list, tag=IBKR, force-policy=TRADING, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/tos.list, tag=TOS, force-policy=TRADING, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/tradingview.list, tag=TradingView, force-policy=TRADING, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/ai.list, tag=AI, force-policy=PROXY, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/telegram.list, tag=Telegram, force-policy=PROXY, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/apple.list, tag=Apple, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
