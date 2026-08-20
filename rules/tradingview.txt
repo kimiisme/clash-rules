@@ -5,5 +5,30 @@ DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,tradingview-widget.com
 DOMAIN-SUFFIX,tradeviewlabs.com
 DOMAIN-SUFFIX,tvwidgets.io
+# 子域名（精确覆盖）
+DOMAIN,www.tradingview.com
+DOMAIN,s3.tradingview.com
+DOMAIN,static.tradingview.com
+DOMAIN,pine-facade.tradingview.com
+DOMAIN,prodata.tradingview.com
+DOMAIN,data.tradingview.com
+DOMAIN,chart.tradingview.com
+DOMAIN,widget.tradingview.com
+DOMAIN,news.tradingview.com
+DOMAIN,scanner.tradingview.com
+DOMAIN,api.tradingview.com
+DOMAIN,replay.tradingview.com
+DOMAIN,pushstream.tradingview.com
+DOMAIN,widgetdata.tradingview.com
+DOMAIN,symbol-search.tradingview.com
+DOMAIN,metainfo.tradingview.com
+DOMAIN,featureflags.tradingview.com
+DOMAIN,premium.tradingview.com
+DOMAIN,billing.tradingview.com
+DOMAIN,auth.tradingview.com
+DOMAIN,user-auth.tradingview.com
+DOMAIN,sso.tradingview.com
+DOMAIN,cdn.tradingview.com
+DOMAIN,fonts.tradingview.com
 # 关键字兜底
 DOMAIN-KEYWORD,tradingview

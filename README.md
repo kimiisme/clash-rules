@@ -13,7 +13,7 @@
 | ibkr-direct | 盈透中国站 | DIRECT | [rules/](rules/ibkr-direct.txt) | [quanx/](quanx/ibkr-direct.list) |
 | ibkr | 盈透证券海外 | TRADING | [rules/](rules/ibkr.txt) | [quanx/](quanx/ibkr.list) |
 | tos | Thinkorswim / Schwab | TRADING | [rules/](rules/tos.txt) | [quanx/](quanx/tos.list) |
-| tradingview | TradingView 图表 / 行情 | TRADING | [rules/](rules/tradingview.txt) | [quanx/](quanx/tradingview.list) |
+| tradingview | TradingView 图表 / 行情 | TRADING | [yaml](rules/tradingview.yaml) / [txt](rules/tradingview.txt) | [quanx/](quanx/tradingview.list) |
 | ai | ChatGPT / Claude 等 | PROXY | [rules/](rules/ai.txt) | [quanx/](quanx/ai.list) |
 | telegram | Telegram | PROXY | [rules/](rules/telegram.txt) | [quanx/](quanx/telegram.list) |
 | apple | Apple / iCloud | DIRECT | [rules/](rules/apple.txt) | [quanx/](quanx/apple.list) |
@@ -24,7 +24,10 @@
 
 ## Clash Meta 订阅
 
-`rule-providers`：`type: http`，`behavior: classical`，`format: text`
+`rule-providers`：`type: http`，`behavior: classical`
+
+- 多数规则：`format: text`
+- TradingView：`format: yaml`（blackmatrix7 风格 `payload`）
 
 ```text
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/private.txt
@@ -32,7 +35,7 @@ https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/reject.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr-direct.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ibkr.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tos.txt
-https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.txt
+https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.yaml
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/ai.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/telegram.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/apple.txt
@@ -40,6 +43,18 @@ https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/google.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/gfw.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/direct.txt
 https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/proxy.txt
+```
+
+TradingView `rule-providers` 示例：
+
+```yaml
+tradingview:
+  type: http
+  behavior: classical
+  format: yaml
+  url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.yaml"
+  path: ./ruleset/tradingview.yaml
+  interval: 86400
 ```
 
 完整示例：[examples/clash-meta.yaml](examples/clash-meta.yaml)
@@ -70,7 +85,7 @@ https://raw.githubusercontent.com/kimiisme/clash-rules/main/quanx/proxy.list, ta
 
 ## 维护
 
-1. 优先改 `rules/*.txt`（Clash 源），再同步生成 `quanx/*.list`。
+1. 优先改 `rules/*.txt` 或 `rules/*.yaml`（Clash 源），再同步生成 `quanx/*.list`。
 2. `git push` 后客户端按 `update-interval` / `interval` 自动更新。
 3. `reject` 关键词较宽，误杀时删掉对应行或加到 `direct`。
 

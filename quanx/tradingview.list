@@ -4,5 +4,30 @@ HOST-SUFFIX,tradingview.com,TRADING
 HOST-SUFFIX,tradingview-widget.com,TRADING
 HOST-SUFFIX,tradeviewlabs.com,TRADING
 HOST-SUFFIX,tvwidgets.io,TRADING
+# 子域名（精确覆盖）
+HOST,www.tradingview.com,TRADING
+HOST,s3.tradingview.com,TRADING
+HOST,static.tradingview.com,TRADING
+HOST,pine-facade.tradingview.com,TRADING
+HOST,prodata.tradingview.com,TRADING
+HOST,data.tradingview.com,TRADING
+HOST,chart.tradingview.com,TRADING
+HOST,widget.tradingview.com,TRADING
+HOST,news.tradingview.com,TRADING
+HOST,scanner.tradingview.com,TRADING
+HOST,api.tradingview.com,TRADING
+HOST,replay.tradingview.com,TRADING
+HOST,pushstream.tradingview.com,TRADING
+HOST,widgetdata.tradingview.com,TRADING
+HOST,symbol-search.tradingview.com,TRADING
+HOST,metainfo.tradingview.com,TRADING
+HOST,featureflags.tradingview.com,TRADING
+HOST,premium.tradingview.com,TRADING
+HOST,billing.tradingview.com,TRADING
+HOST,auth.tradingview.com,TRADING
+HOST,user-auth.tradingview.com,TRADING
+HOST,sso.tradingview.com,TRADING
+HOST,cdn.tradingview.com,TRADING
+HOST,fonts.tradingview.com,TRADING
 # 关键字兜底
 HOST-KEYWORD,tradingview,TRADING

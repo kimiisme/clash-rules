@@ -115,9 +115,9 @@ rule-providers:
   tradingview:
     type: http
     behavior: classical
-    format: text
-    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.txt"
-    path: ./ruleset/tradingview.txt
+    format: yaml
+    url: "https://raw.githubusercontent.com/kimiisme/clash-rules/main/rules/tradingview.yaml"
+    path: ./ruleset/tradingview.yaml
     interval: 86400
 
   ai:
